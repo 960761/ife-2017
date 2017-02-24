@@ -1,8 +1,8 @@
-# 任务二：零基础HTML及CSS编码（一）
+# [任务二：零基础HTML及CSS编码（一）](http://ife.baidu.com/course/detail/id/92)
 
-导师小薇 | 小薇学院
+[导师小薇](http://ife.baidu.com/mentor/detail/id/27) | [小薇学院](http://ife.baidu.com/college/detail/id/9)
 
-时间平均用时0.0天
+时间  平均用时0.0天
 
 ### 课程概述
 

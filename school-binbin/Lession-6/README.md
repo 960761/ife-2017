@@ -1,8 +1,8 @@
-# 任务六：基础JavaScript练习（三）
+# [任务六：基础JavaScript练习（三）](http://ife.baidu.com/course/detail/id/107)
 
-导师斌斌 | 斌斌学院
+[导师斌斌](http://ife.baidu.com/mentor/detail/id/28) | [斌斌学院](http://ife.baidu.com/college/detail/id/10)
 
-时间平均用时0.0天
+时间  平均用时0.0天
 
 ### 课程概述
 

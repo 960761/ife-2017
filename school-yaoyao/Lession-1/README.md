@@ -1,8 +1,8 @@
-# 任务一：表单（一）单个表单项的检验
+# [任务一：表单（一）单个表单项的检验](http://ife.baidu.com/course/detail/id/97)
 
-导师耀耀 | 耀耀学院
+[导师耀耀](http://ife.baidu.com/mentor/detail/id/29) | [耀耀学院](http://ife.baidu.com/college/detail/id/11)
 
-时间平均用时0.0天
+时间  平均用时0.0天
 
 ### 课程概述
 

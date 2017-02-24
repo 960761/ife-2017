@@ -1,8 +1,8 @@
-# 任务八：JavaScript和树（二）
+# [任务八：JavaScript和树（二）](http://ife.baidu.com/course/detail/id/110)
 
-导师斌斌 | 斌斌学院
+[导师斌斌](http://ife.baidu.com/mentor/detail/id/28) | [斌斌学院](http://ife.baidu.com/college/detail/id/10)
 
-时间平均用时0.0天
+时间  平均用时0.0天
 
 ### 课程概述
 

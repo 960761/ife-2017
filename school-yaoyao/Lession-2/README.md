@@ -1,8 +1,8 @@
-# 任务二：表单（二）多个表单项的动态校验
+# [任务二：表单（二）多个表单项的动态校验](http://ife.baidu.com/course/detail/id/101)
 
-导师耀耀 | 耀耀学院
+[导师耀耀](http://ife.baidu.com/mentor/detail/id/29) | [耀耀学院](http://ife.baidu.com/college/detail/id/11)
 
-时间平均用时0.0天
+时间  平均用时0.0天
 
 ### 课程概述
 

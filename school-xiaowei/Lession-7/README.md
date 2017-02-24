@@ -1,8 +1,8 @@
-# 任务七：实现常见的技术产品官网的页面架构及样式布局
+# [任务七：实现常见的技术产品官网的页面架构及样式布局](http://ife.baidu.com/course/detail/id/102)
 
-导师小薇 | 小薇学院
+[导师小薇](http://ife.baidu.com/mentor/detail/id/27) | [小薇学院](http://ife.baidu.com/college/detail/id/9)
 
-时间平均用时0.0天
+时间  平均用时0.0天
 
 ### 课程概述
 

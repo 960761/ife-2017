@@ -1,8 +1,8 @@
-# 任务一：零基础HTML编码
+# [任务一：零基础HTML编码](http://ife.baidu.com/course/detail/id/90)
 
-导师小薇 | 小薇学院
+[导师小薇](http://ife.baidu.com/mentor/detail/id/27) | [小薇学院](http://ife.baidu.com/college/detail/id/9)
 
-时间平均用时0.0天
+时间  平均用时0.0天
 
 ### 课程概述
 
