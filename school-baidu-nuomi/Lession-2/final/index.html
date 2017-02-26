@@ -7,38 +7,7 @@
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     </head>
     <body>
-    
-    </body>
-<script type="text/babel">
-class Observer {
-    constructor(obj){
-        // Object.freeze(obj);
-        this.data = Observer.observer(obj); // 将数据转移到data上
-    }
-    static observer(obj){
-        let res = {};
-        for(let key in obj){
-            if(typeof obj[key] === 'object')
-                res[key] = Observer.observer(obj[key]); // 遍历对象里面所有属性，如果对象过深可能出现栈溢出
-        }
-        return new Proxy(res, {
-            get: function(target, prop, receiver){
-                console.log('你访问了 ' + prop);
-                return Reflect.get(target, prop, receiver);
-            },
-            set: function(target, prop, value, receiver){
-                if(typeof value === 'object'){
-                    console.log('你设置了 ' + prop + '，新的值为 ' + JSON.stringify(value));
-                    value = Observer.observer(value); // 对设置object进行遍历设置代理
-                } else {
-                    console.log('你设置了 ' + prop + '，新的值为 ' + value);
-                }
-                return Reflect.set(target, prop, value, receiver);
-            }
-        });
-    }
-}
-
+    <textarea>
 var app1 = new Observer({
     name: 'youngwind',
     age: 25,
@@ -67,5 +36,50 @@ app1.data.edu.major = 'science';  // 你访问了 edu  你设置了 major，新�
 
 app2.data.university // 你访问了 university
 app2.data.major = 'science'  // 你设置了 major，新的值为 science
+    </textarea>
+    <button>运行一下</button>
+    </body>
+<script type="text/babel">
+class Observer {
+    constructor(obj){
+        // Object.freeze(obj);
+        this.data = Observer.observer(obj); // 将数据转移到data上
+    }
+    static observer(obj){
+        let res = {};
+        for(let key in obj){
+            if(typeof obj[key] === 'object')
+                res[key] = Observer.observer(obj[key]); // 遍历对象里面所有属性，如果对象过深可能出现栈溢出
+        }
+        return new Proxy(res, {
+            get: (target, prop, receiver) => {
+                console.log('你访问了 ' + prop);
+                return Reflect.get(target, prop, receiver);
+            },
+            set: (target, prop, value, receiver){
+                if(typeof value === 'object') => {
+                    console.log('你设置了 ' + prop + '，新的值为 ' + JSON.stringify(value));
+                    value = Observer.observer(value); // 对设置object进行遍历设置代理
+                } else {
+                    console.log('你设置了 ' + prop + '，新的值为 ' + value);
+                }
+                return Reflect.set(target, prop, value, receiver);
+            }
+        });
+    }
+}
+
+console.log = new Proxy(console.log, {
+    apply: (target, thisArg, argumentsList) => {
+        alert(argumentsList);
+        return Reflect.apply(target, thisArg, argumentsList);
+    }
+})
+
+window.onload = function() {
+    document.querySelector('button').onclick = function() {
+        eval(document.querySelector('textarea').value);
+    }
+}
 </script>
 </html>
