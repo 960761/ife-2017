@@ -56,7 +56,7 @@ class Observer {
                 console.log('你访问了 ' + prop);
                 return Reflect.get(target, prop, receiver);
             },
-            set: (target, prop, value, receiver){
+            set: (target, prop, value, receiver) => {
                 if(typeof value === 'object') => {
                     console.log('你设置了 ' + prop + '，新的值为 ' + JSON.stringify(value));
                     value = Observer.observer(value); // 对设置object进行遍历设置代理
